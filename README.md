@@ -10,7 +10,7 @@ GTuner is a guitar tuner based on Python.
 ## Usage
 Use
 ```
-python main
+python main.py
 ```
 to run, and press `q` to quite the program.
 
