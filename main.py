@@ -42,23 +42,28 @@ in_stream = p.open(format=FORMAT, channels=CHANNELS, rate=SAMPLE_RATE,\
 # Draw panel
 r_panel = 30
 pointer_len = r_panel - 1
-pointer_color = '#2b2b23'
+pointer_color = '#E7E0CD'
 pointer_width = 1
 spectrum_base = 15
 divide_factor = 40
 # mpl.rcParams['toolbar'] = 'None'
 fig = plt.figure()
-fig.patch.set_facecolor('#958f82')
+plt.rcParams["font.weight"] = "bold"
+fig.patch.set_facecolor('#F7FBF8')
 fig.canvas.toolbar_visible = False
 ax = plt.subplot(projection='polar')
-ax.set_facecolor("#818077")
-plt.get_current_fig_manager().set_window_title('Guitar Tuner')
+ax.set_facecolor('#305996')
+plt.get_current_fig_manager().set_window_title('GTuner')
 fig.canvas.mpl_connect('key_press_event', on_press)
 ax.set_xticks(d2r(freq_ticks)) 
 ax.set(xticklabels=tick_notes)
+
 ax.set_ylim(0,30)
 ax.set_yticks([30]) 
 ax.set(yticklabels=[])
+# ax.spines['polar'].set_visible(False)
+ax.spines['polar'].set_color('#305996')
+ax.tick_params(axis='x', colors='#305996')
 plt.grid()
 
 scale = np.arange(0, 360, 10)
