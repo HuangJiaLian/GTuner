@@ -50,7 +50,7 @@ divide_factor = 40
 fig = plt.figure()
 plt.rcParams["font.weight"] = "bold"
 fig.patch.set_facecolor('#F7FBF8')
-fig.canvas.toolbar_visible = False
+# fig.canvas.toolbar_visible = False
 ax = plt.subplot(projection='polar')
 ax.set_facecolor('#305996')
 plt.get_current_fig_manager().set_window_title('GTuner')

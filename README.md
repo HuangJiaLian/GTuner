@@ -9,7 +9,7 @@ A guitar tuner based on Python.
 - matplotlib
 
 ## Usage
-Use `python main.py` to run and press `q` to quite.
+Use `python GTuner.py` to run and press `q` to quite.
 
 ## Ref.
 
